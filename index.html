@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Gift.css" rel="stylesheet">
+    <link href="Heart.png" rel="icon">
+    <title>Happy Birthday!</title>
+</head>
+<body>
+<div class="flower" style="top:10%; left:15%;">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+</div>
+<div class="flower" style="top:30%; left:70%;">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+</div>
+<div class="flower" style="top:60%; left:25%;">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+</div>
+<div class="flower" style="top:80%; left:80%;">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+</div>
+<div class="flower" style="top:50%; left:50%;">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+</div>
+<div class="flower" style="top:15%; left:85%;">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+</div>
+<div class="flower" style="top:75%; left:10%;">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+</div>
+
+<div class="heart" id="heart"></div>
+
+    <div class="letter" id="letter">
+        <div class="letter-content">
+            <h1>💌 Happy Birthday 💌</h1>
+            <p>
+               <span style="font-weight: bolder;">Happy Birthday Mommy/Patience!</span> 
+                    <span style="display: inline-block; margin-left: 10px;"> Im so grateful to have you in my life. You've always been my guide, my support and biggest helper.
+                    You are an amazing mom and an inspiration to me and everyone around you.
+                    I first want to congratulate you on making it to 50 years old and looking so young.
+                    Turning 50 is such a big deal and incredible milestone, so i've created a little something that will be around as long as internet is.
+                    I wishg you all the happiness in the world, good health, and a amazing life. May this birthday be the start of your best chapter yet.
+                    Thank you for being you, the greatest mother in the world. I love you. </span>
+                 <span style="font-weight: bolder;">With all my love, Aj.</span>
+
+
+
+                 💖
+            </p>
+            <button id="closeLetter">Close</button>
+        </div>
+    </div>
+<!--
+<audio id="bg-music" autoplay loop>
+    <source src="Happy Birthday Piano Music Loop 🎂 _ Cute Cake & Balloons – 20 Min Background.mp3" type="audio/mp3">
+</audio>
+-->
+</body>
+
+<script>
+    const heart = document.getElementById('heart');
+    const letter = document.getElementById('letter');
+    const closeLetter = document.getElementById('closeLetter');
+
+    heart.addEventListener('click', () => {
+        letter.style.display = 'flex';
+    });
+
+    closeLetter.addEventListener('click', () => {
+        letter.style.display = 'none';
+    });
+
+    const audio = document.getElementById('bg-music');
+    document.body.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+        }
+    });
+</script>
+
+</html>
