@@ -1,4 +1,4 @@
-  body {
+   body {
     margin: 0;
     height: 100vh;
     display: flex;
@@ -134,4 +134,55 @@
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
+}
+
+
+
+
+
+
+
+/* MEDIA */
+
+/* Target 4K UHD TVs like Samsung UN65NU6900F */
+@media screen and (min-width: 3840px) and (min-height: 2160px) {
+
+  /* Scale up flowers */
+  .flower {
+    width: clamp(48px, 1.5vw, 72px);
+    height: clamp(48px, 1.5vw, 72px);
+  }
+  .flower .petal {
+    width: 50%;
+    height: 50%;
+  }
+  .flower .center {
+    width: 30%;
+    height: 30%;
+  }
+
+  /* Scale up heart */
+  .heart {
+    width: clamp(240px, 5vw, 320px);
+    height: clamp(216px, 5vw, 288px);
+  }
+  .heart::before,
+  .heart::after {
+    width: clamp(240px, 5vw, 320px);
+    height: clamp(216px, 5vw, 288px);
+  }
+
+  /* Scale letter modal */
+  .letter-content {
+    max-width: 900px;
+    padding: 4rem;
+    font-size: 1.8rem;
+  }
+
+  /* Optional: make letter-content button bigger */
+  .letter-content button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
 }
